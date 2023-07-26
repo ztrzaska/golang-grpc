@@ -27,7 +27,6 @@ FROM scratch
 #RUN apk --update --no-cache add bash && rm -rf /var/cache/apk/*
 
 COPY --from=base /usr/share/zoneinfo /usr/share/zoneinfo
-COPY ca-certs/polkomtel/ca /etc/ssl/certs
 COPY --from=base /etc/passwd /etc/passwd
 COPY --from=base /etc/group /etc/group
 COPY --from=base /grpcserver .
