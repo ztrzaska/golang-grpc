@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package product;
+
+import "hello_world.proto";
+option go_package="grpc-server/product";
+
+service Service {
+  rpc Hello (HelloRequest) returns (HelloResponse);
+}

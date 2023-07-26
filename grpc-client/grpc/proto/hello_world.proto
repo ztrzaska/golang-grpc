@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package product;
+
+import "google/protobuf/timestamp.proto";
+
+option go_package="grpc-server/product";
+
+message HelloRequest {
+  string name = 1;
+}
+
+message HelloResponse {
+  string greet = 1;
+  google.protobuf.Timestamp send_date = 2;
+}
+
