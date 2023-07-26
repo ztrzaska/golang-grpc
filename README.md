@@ -1,9 +1,9 @@
-# grpc-server
+# Golang grpc
 
 
 ## Getting started
 
-This microservice has grpc api.
+This microservices contains server which exposes grpc api. Another microservice connects to grpc server as client.
 
 ## Protobuf
 
